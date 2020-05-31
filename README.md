@@ -1,6 +1,6 @@
 # simple-translator
 
-[![Build Status](https://travis-ci.com/Lumm1t/simple-translator.svg?branch=master)](https://travis-ci.com/Lumm1t/simple-translator)
+[![Build Status](https://travis-ci.com/Lumm1t/simple-translator.svg?token=eLs3zZFRNPbDUYaB8XzW&branch=master)](https://travis-ci.com/Lumm1t/simple-translator)
 
 Simple translation tool written with Vue 3.
 
