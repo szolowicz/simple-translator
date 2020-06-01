@@ -83,10 +83,10 @@ export default {
 
 select {
   height: 35px;
-  border: 0.15em solid #fff;
+  border: 0.15em solid $white;
   border-radius: 0.12em;
   font-weight: 300;
-  color: #fff;
+  color: $white;
   outline: none;
   background: none;
   font-size: 0.9em;

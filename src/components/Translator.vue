@@ -46,11 +46,11 @@
         ></textarea>
 
         <div class="buttons">
-          <a class="btn" href="#" @click.prevent="copyToTranslate">
+          <a class="button" href="#" @click.prevent="copyToTranslate">
             <span>{{ t('copyButton') }}</span>
           </a>
 
-          <a class="btn" href="#" @click.prevent="resetToTranslate">
+          <a class="button" href="#" @click.prevent="resetToTranslate">
             <span>{{ t('resetButton') }}</span>
           </a>
         </div>
@@ -63,7 +63,7 @@
         <div class="translated waiting" v-else>{{ t('translatedText') }}</div>
 
         <div class="buttons">
-          <a class="btn copyTranslated" href="#" @click.prevent="copyTranslated">
+          <a class="button copyTranslated" href="#" @click.prevent="copyTranslated">
             <span>{{ t('copyButton') }}</span>
           </a>
         </div>
@@ -221,28 +221,8 @@ textarea {
   overflow-y: auto;
 }
 
-.btn {
-  margin: 0 0.4em 0.4em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: roboto, sans-serif;
-  font-weight: 300;
-  color: #fff;
-  text-align: center;
-  transition: all 0.2s;
-  outline: none;
-  padding: 0.25em 1.2em;
-  border: 0.13em solid #fff;
-
-  &:hover {
-    color: #000;
-    background: #fff;
-  }
-}
-
-.copyTranslated {
-  margin-top: 4px;
+.waiting {
+  color: #878787 !important;
 }
 
 .buttons {
@@ -254,8 +234,28 @@ textarea {
   max-width: 90vw;
 }
 
-.waiting {
-  color: #878787 !important;
+.button {
+  margin: 0 0.4em 0.4em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+  transition: all 0.2s;
+  outline: none;
+  padding: 0.25em 1.2em;
+  border: 0.13em solid $white;
+
+  &:hover {
+    color: #000;
+    background: $white;
+  }
+}
+
+.copyTranslated {
+  margin-top: 4px;
 }
 
 .github-corner:hover .octo-arm {
