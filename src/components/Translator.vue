@@ -120,10 +120,12 @@ export default {
 
     function updatePairFrom(index) {
       translator.languageFrom = index.value;
+      translate();
     }
 
     function updatePairTo(index) {
       translator.languageTo = index.value;
+      translate();
     }
 
     // TO-DO: Use dependency
