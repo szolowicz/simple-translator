@@ -22,8 +22,8 @@ https://lumm1t.github.io/simple-translator/
 
 Change Yandex.Translate API key:
 
-1. Rename `.env.example` to `.env`
-2. Open `.env` and change `YOUR-API-KEY`.
+1. Rename `.env.local.example` to `.env.local`
+2. Open `.env.local` and change `YOUR-API-KEY`.
 
 ## Run
 
