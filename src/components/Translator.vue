@@ -116,12 +116,9 @@ export default {
         text: translator.textToTranslate
       };
 
-      const ret = [];
-      for (let d in data)
-        ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
-      const params = ret.join('&');
+      const searchParams = new URLSearchParams(data);
 
-      axios(`${API_LINK}${params}`).then(response => {
+      axios(`${API_LINK}${searchParams}`).then(response => {
         translator.translation = response.data.text[0];
       });
     }
