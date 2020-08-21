@@ -4,7 +4,11 @@
       <div>
         <select v-model="translateFrom">
           <option :value="null" disabled>{{ t('languageSelect') }}</option>
-          <option v-for="(option, index) in languageOptions" :key="index" :value="option">
+          <option
+            v-for="(option, index) in languageOptions"
+            :key="index"
+            :value="option"
+          >
             {{ option.text }}
           </option>
         </select>
@@ -13,7 +17,11 @@
       <div>
         <select v-model="translateTo">
           <option :value="null" disabled>{{ t('languageSelect') }}</option>
-          <option v-for="(option, index) in languageOptions" :key="index" :value="option">
+          <option
+            v-for="(option, index) in languageOptions"
+            :key="index"
+            :value="option"
+          >
             {{ option.text }}
           </option>
         </select>

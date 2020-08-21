@@ -22,7 +22,9 @@ export default {
         ? navigator.languages[0]
         : navigator.language || navigator.userLanguage;
       const accepted = ['en', 'pl', 'de', 'ru'];
-      const language = accepted.includes(browserLanguage) ? browserLanguage : 'en';
+      const language = accepted.includes(browserLanguage)
+        ? browserLanguage
+        : 'en';
 
       locale.value = language;
     });
