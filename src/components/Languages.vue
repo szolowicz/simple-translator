@@ -51,14 +51,14 @@ export default {
     watch(
       () => languages.translateFrom,
       value => {
-        if (value) emit('onLangFromSelect', value);
+        if (value) emit('on-lang-from-select', value);
       }
     );
 
     watch(
       () => languages.translateTo,
       value => {
-        if (value) emit('onLangToSelect', value);
+        if (value) emit('on-lang-to-select', value);
       }
     );
 

@@ -33,7 +33,10 @@
       <br />translator
     </h1>
 
-    <Languages @onLangFromSelect="updatePairFrom" @onLangToSelect="updatePairTo" />
+    <Languages
+      @on-lang-from-select="updatePairFrom"
+      @on-lang-to-select="updatePairTo"
+    />
 
     <div class="translator">
       <div>
@@ -57,11 +60,17 @@
       </div>
 
       <div>
-        <div class="translated" v-if="textToTranslate && translation">{{ translation }}</div>
+        <div class="translated" v-if="textToTranslate && translation">
+          {{ translation }}
+        </div>
         <div class="translated waiting" v-else>{{ t('translatedText') }}</div>
 
         <div class="buttons">
-          <a class="button copyTranslated" href="#" @click.prevent="copyTranslated">
+          <a
+            class="button copyTranslated"
+            href="#"
+            @click.prevent="copyTranslated"
+          >
             <span>{{ t('copyButton') }}</span>
           </a>
         </div>
