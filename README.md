@@ -6,6 +6,8 @@ Simple translation tool written with Vue 3.
 
 https://lumm1t.github.io/simple-translator/
 
+### Note: Starting May 27, 2020 - Yandex Translate free API keys aren't issued!
+
 :sparkling_heart: User-friendly interface
 
 :sparkles: Vue.js 3.0 & Sass
